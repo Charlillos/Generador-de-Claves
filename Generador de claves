@@ -1,0 +1,89 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador de Contraseñas Seguras</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Bebas+Neue&family=Bungee&family=Goldman:wght@400;700&family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <style>
+    /* Video de fondo */
+    #video-fondo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Barlow', sans-serif;
+    }
+
+    .contenido {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding-top: 20vh;
+      color: white;
+    }
+
+    h1 {
+      font-family: "Goldman", sans-serif;
+      color: chartreuse;
+      font-size: 3rem;
+    }
+
+    p {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.2rem;
+      color: red;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      font-family: "Bungee", sans-serif;
+      font-size: 1rem;
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: white;
+      border: none;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: chartreuse;
+      color: black;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Video de fondo -->
+  <video id="video-fondo" autoplay loop muted playsinline>
+    <source src="https://cdn.pixabay.com/video/2022/11/26/140582-775389269_large.mp4" type="video/mp4">
+  </video>
+
+  <!-- Contenido principal -->
+  <div class="contenido">
+    <h1>GENERADOR DE CONTRASEÑAS</h1>
+    <p>Este es un sistema que le permitirá generar contraseñas seguras o probar si la suya es segura</p>
+    <a href="generador.html">
+      <button>Iniciar el proceso</button>
+    </a>
+  </div>
+</body>
+</html>
